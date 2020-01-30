@@ -46,17 +46,17 @@ The script in the Repository is used to build Openwrt root partition and boot it
 
 5. resize openwrt partition:
 
-        ```sh
-        parted /dev/sda
-        p
-        resizepart PARTNUM END
-        ```
+    ```sh
+    parted /dev/sda
+    p
+    resizepart PARTNUM END
+    ```
 
 6. reboot computer
 
-        ```sh
-        reboot
-        ```
+    ```sh
+    reboot
+    ```
 
 ## Operation Gif:
 <img width="600" src="Peek2020-1-30.gif">
