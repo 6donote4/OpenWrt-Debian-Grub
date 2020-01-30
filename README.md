@@ -23,7 +23,7 @@ The script in the Repository is used to build Openwrt root partition and boot it
         swap boot(ext2) root(ext4 being used to mount Debian / directory) 
     - the left partition being used to mount and write OpenWrt(ext4)
 2. Install Debian 10 to your disk.
-3. Copy openwrt_grub_config.sh in the repository , OpenWrt-x86-64-rootfs-ext4.img.gz , OpenWrt-x86-64-vmlinuz and your OpenWrt configuration backup file to the disk on Debian that have been installed just now.
+3. Copy the directory that included OpenWrt-x86-64-rootfs-ext4.img.gz , OpenWrt-x86-64-vmlinuz and your OpenWrt configuration backup file in the repository to the disk on Debian that have been installed just now.
 4. Execute openwrt_grub_config.sh :
     - fully configure:
 
@@ -41,6 +41,20 @@ The script in the Repository is used to build Openwrt root partition and boot it
 
         ```sh
         ./openwrt_grub_config.sh -r
+        ```
+
+    - resize openwrt partition:
+
+        ```sh
+        parted /dev/sda
+        p
+        redizepart PARTNUM END
+        quit
+        ```
+    - reboot computer
+    
+        ```sh
+        reboot
         ```
 
 ## Operation gif:
