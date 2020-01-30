@@ -43,7 +43,7 @@ The script in the Repository is used to build Openwrt root partition and boot it
         ./openwrt_grub_config.sh -r
         ```
 
-    - resize openwrt partition:
+5. resize openwrt partition:
 
         ```sh
         parted /dev/sda
@@ -51,7 +51,7 @@ The script in the Repository is used to build Openwrt root partition and boot it
         redizepart PARTNUM END
         quit
         ```
-    - reboot computer
+6. reboot computer
     
         ```sh
         reboot
