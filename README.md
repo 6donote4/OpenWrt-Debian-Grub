@@ -58,5 +58,5 @@ The script in the Repository is used to build Openwrt root partition and boot it
         reboot
         ```
 
-## Operation gif:
+## Operation Gif:
 <img width="600" src="Peek2020-1-30.gif">
