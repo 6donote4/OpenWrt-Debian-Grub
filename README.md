@@ -51,6 +51,7 @@ The script in the Repository is used to build Openwrt root partition and boot it
         redizepart PARTNUM END
         quit
         ```
+
 6. reboot computer
     
         ```sh
