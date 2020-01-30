@@ -1,3 +1,4 @@
+[中文](README-CN.md) ←
 # OpenWrt-Debian-Grub
 The script in the Repository is used to build Openwrt root partition and boot it or Debian . Then we can update OpenWrt by using rootfs-ext4.img and vmlinuz kernel on Debian/GNU system. 
 
@@ -14,7 +15,7 @@ The script in the Repository is used to build Openwrt root partition and boot it
 - Write OpenWrt root ext4 partition to disk on Debian 10
 - Change boot order
 - Recovery OpenWrt configuration files by using backup file
-- Upgrade OpenWrt by using last image and vmlinux kernel file
+- Upgrade OpenWrt by using the latest image and vmlinux kernel file
 
 ## Usage:
 
