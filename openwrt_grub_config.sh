@@ -64,7 +64,11 @@ write_image() {
     cp -rf ./openwrt-x86-64-vmlinuz /boot
     OPENWRT_ROOT_PATH=$(read_fun "Please input installed block device path of OpenWRT: ")
     print_fun $OPENWRT_ROOT_PATH
+    ROOT_NEW_SIZE=$(read_fun "Please input new size(M,G) of OpenWRT root partition file system: ")
+    print_fun $ROOT_NEW_SIZE
     gzip -dc openwrt-x86-64-rootfs-ext4* | dd of=$OPENWRT_ROOT_PATH
+    e2fsck -f $OPENWRT_ROOT_PATH
+    resize2fs $OPENWRT_ROOT_PATH $ROOT_NEW_SIZE
     mkdir ./my_openwrt
     mount $OPENWRT_ROOT_PATH ./my_openwrt
     echo "write_image done"
@@ -104,14 +108,13 @@ default_boot() {
 }
 
 main() {
+    export PATH=$PATH:/sbin
     init
     write_image
     add_boot_menu
     default_boot
     recovery_openwrt
     echo "main done"
-    echo "Please use [parted] to extend your openwrt root partition:"
-    echo "Example: parted /dev/sda; resizepart 4 -1 "
 }
 
 ARGS=( "$@" )
