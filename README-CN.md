@@ -14,6 +14,8 @@
 
 - Debian 10 Linux发行版
 - parted 分区工具
+- e2fsck
+- resize2fs
 - update-grub2 引导启动器
 - OpenWrt-x86-64-rootfs-ext4.img 根目录文件镜像
 - OpenWrt-x86-64-vmlinuz 内核文件
@@ -57,10 +59,7 @@
     - 调整OpenWrt分区大小:
 
         ```sh
-        parted /dev/sda
-        p
-        redizepart PARTNUM END
-        quit
+        ./openwrt_grub_config.sh -s
         ```
     - 重启计算机:
     

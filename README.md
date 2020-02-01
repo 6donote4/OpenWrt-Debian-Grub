@@ -6,6 +6,8 @@ The script in the Repository is used to build Openwrt root partition and boot it
 
 - Debian 10
 - parted 
+- e2fsck
+- resize2fs
 - update-grub2
 - OpenWrt-x86-64-rootfs-ext4.img
 - OpenWrt-x86-64-vmlinuz
@@ -43,16 +45,14 @@ The script in the Repository is used to build Openwrt root partition and boot it
         ```sh
         ./openwrt_grub_config.sh -r
         ```
+    - resize openwrt partition:
 
-5. resize openwrt partition:
+        ```sh
+        ./openwrt_grub_config.sh -s
+        ```
 
-    ```sh
-    parted /dev/sda
-    p
-    resizepart PARTNUM END
-    ```
 
-6. reboot computer
+5. reboot computer
 
     ```sh
     reboot

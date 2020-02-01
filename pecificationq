@@ -1,0 +1,89 @@
+[33mcommit 93b2b610c6521a5d1d6c0b8bc5097a98ba92d4b4[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: 6donote4 <do_note@hotmail.com>
+Date:   Fri Jan 31 20:40:20 2020 +0800
+
+    add openwrt installed script on debian distribution
+
+[33mcommit 66b3829216068466eff255afa68f397dd05735aa[m
+Author: 6donote4 <do_note@hotmail.com>
+Date:   Fri Jan 31 18:44:34 2020 +0800
+
+    OpenWrt-Debian-Grub add feature that is able to resize root partition file system
+
+[33mcommit 6f93089ae2f9294a0e1ab5ecc1baf70d01bdebf3[m
+Author: 6donote4 <do_note@hotmail.com>
+Date:   Fri Jan 31 16:50:25 2020 +0800
+
+    OpenWrt-Debian-Grub add feature that is able to resize root partition file system
+
+[33mcommit 50a8902f7cf6d98d545301a23cf6f7b25e03adf2[m
+Author: 6donote4 <do_note@hotmail.com>
+Date:   Thu Jan 30 20:40:55 2020 +0800
+
+    OpenWrt-Debian-Grub specification
+
+[33mcommit cf6beff31c9062f3a826aebd8e6ae89f6117f5f9[m
+Author: 6donote4 <do_note@hotmail.com>
+Date:   Thu Jan 30 20:37:42 2020 +0800
+
+    OpenWrt-Debian-Grub specification
+
+[33mcommit 0a146741382fa55cbbe9ce5fa4711da45839ed52[m
+Author: 6donote4 <do_note@hotmail.com>
+Date:   Thu Jan 30 20:32:36 2020 +0800
+
+    OpenWrt-Debian-Grub specification
+
+[33mcommit 0d891472149d6ed73572b739f6b6dd6e5b781b4e[m
+Author: 6donote4 <do_note@hotmail.com>
+Date:   Thu Jan 30 19:18:40 2020 +0800
+
+    OpenWrt-Debian-Grub specification
+
+[33mcommit a2822d9cd180444ed1a5820e7cdf74fc31001c69[m
+Author: 6donote4 <do_note@hotmail.com>
+Date:   Thu Jan 30 19:17:46 2020 +0800
+
+    OpenWrt-Debian-Grub specification
+
+[33mcommit 83f49ef329f1079538c01ebbe0230347f826d867[m
+Author: 6donote4 <do_note@hotmail.com>
+Date:   Thu Jan 30 19:13:25 2020 +0800
+
+    OpenWrt-Debian-Grub specification
+
+[33mcommit d43ad28cc259c006a2fd4ce2ba9e821edc15e49e[m
+Author: 6donote4 <do_note@hotmail.com>
+Date:   Thu Jan 30 19:03:20 2020 +0800
+
+    OpenWrt-Debian-Grub specification
+
+[33mcommit 3a8988e4141f4f8a1b06f5d77f758b7e3b357b2a[m
+Author: 6donote4 <do_note@hotmail.com>
+Date:   Thu Jan 30 18:57:13 2020 +0800
+
+    OpenWrt-Debian-Grub specification
+
+[33mcommit c4917c09821d859cab8440096de2ddaf17853f70[m
+Author: 6donote4 <do_note@hotmail.com>
+Date:   Thu Jan 30 18:54:53 2020 +0800
+
+    init
+
+[33mcommit 3b8ed452f83e7c59a6085f439c81e8440bd7aa72[m
+Author: 6donote4 <do_note@hotmail.com>
+Date:   Thu Jan 30 18:30:02 2020 +0800
+
+    init
+
+[33mcommit 84e5a6d621cdca431fbea676b4bb0baf0449eec6[m
+Author: 6donote4 <do_note@hotmail.com>
+Date:   Thu Jan 30 11:33:49 2020 +0800
+
+    init
+
+[33mcommit 6e8b9766cfd682f8ff16c314337fc46b30af9eeb[m
+Author: 6donote4 <6donote4@gmail.com>
+Date:   Thu Jan 30 11:22:12 2020 +0800
+
+    Initial commit
