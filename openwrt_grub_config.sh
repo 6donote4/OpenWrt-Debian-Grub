@@ -50,7 +50,7 @@ read_fun() {
 }
 
 print_fun() {
-    echo -e "${yellow}You inputed :${plain} >&1"
+    echo -e "${yellow}You inputed :${plain}"
     echo $1 >&1
     echo -e "${green}print done${plain}"
 }
