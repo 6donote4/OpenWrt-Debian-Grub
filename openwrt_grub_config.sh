@@ -162,7 +162,7 @@ ARGS=( "$@" )
 			;;
 
 	    *)
-			echo  "Invalid parameter $1" 1>&2
+			echo -e "${red}Invalid parameter $1 ${plain}" 1>&2
 			exit 1
 			;;
 	esac
