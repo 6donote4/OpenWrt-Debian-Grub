@@ -31,6 +31,7 @@
 
 ## 用法：
 
+### 纯命令行脚本
 1. 给磁盘分区并格式化
     - 划分四个分区(MBR): 
         swap交换分区 boot(ext2)启动文件分区 root(ext4 being used to mount Debian / directory)Debian系统根分区 
@@ -69,3 +70,9 @@
 
 ## 操作动画:
 <img width="600" src="Peek2020-1-30.gif">
+
+### 带UI脚本，基于dialog
+
+        ```sh
+        ./openwrt_grub_config_ui.sh 
+        ```
