@@ -61,9 +61,9 @@ The script in the Repository is used to build Openwrt root partition and boot it
 
 ### Script with UI based on dialog
 
-    ```sh
-    ./openwrt_grub_config_ui.sh
-    ```
+            ```sh
+            ./openwrt_grub_config_ui.sh
+            ```
 
 ## Operation Gif:
 <img width="600" src="Peek2020-1-30.gif">
