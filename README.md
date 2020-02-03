@@ -21,7 +21,7 @@ The script in the Repository is used to build Openwrt root partition and boot it
 
 ## Usage:
 
-###Script in cli
+### Script in cli
 1. Part and format your disk.
     - part 4 partition(MBR): 
         swap boot(ext2) root(ext4 being used to mount Debian / directory) 
@@ -58,11 +58,13 @@ The script in the Repository is used to build Openwrt root partition and boot it
     ```sh
     reboot
     ```
-## Operation Gif:
-<img width="600" src="Peek2020-1-30.gif">
 
 ### Script with UI based on dialog
 
-        ```sh
-        ./openwrt_grub_config_ui.sh
-        ```
+    ```sh
+    ./openwrt_grub_config_ui.sh
+    ```
+
+## Operation Gif:
+<img width="600" src="Peek2020-1-30.gif">
+<img width="600" src="Peek2020-02-03-23-33.gif" />
