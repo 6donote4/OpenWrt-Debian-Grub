@@ -71,9 +71,9 @@
 
 ### 带UI脚本，基于dialog
 
-        ```sh
-        ./openwrt_grub_config_ui.sh 
-        ```
+    ```sh
+    ./openwrt_grub_config_ui.sh 
+    ```
 
 ## 操作动画:
 <img width="600" src="Peek2020-1-30.gif">
