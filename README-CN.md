@@ -74,5 +74,7 @@
   执行  `./openwrt_grub_config.sh`
 
 ## 操作动画:
+
 <img width="600" src="Peek2020-1-30.gif">
+
 <img width="600" src="Peek2020-02-03-23-33.gif">
