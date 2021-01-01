@@ -214,10 +214,10 @@ init() {
 }
 
 write_image() {
-    cp -rf ./openwrt-x86-64-vmlinuz /boot
+    cp -rf ./openwrt-x86-64-generic-kernel.bin /boot
     print_fun ${OPENWRT_ROOT_PATH=$(read_fun "Please input installed block device path of OpenWRT: ")}
     print_fun ${ROOT_NEW_SIZE=$(read_fun "Please input new size(M) of OpenWRT root partition file system(Not out of range in device!): ")}
-    gzip -dc openwrt-x86-64-rootfs-ext4* | dd of=$OPENWRT_ROOT_PATH
+    gzip -dc openwrt-x86-64-generic-ext4-rootfs* | dd of=$OPENWRT_ROOT_PATH
     e2fsck -f $OPENWRT_ROOT_PATH
     resize2fs $OPENWRT_ROOT_PATH $ROOT_NEW_SIZE
     mkdir ./my_openwrt
@@ -280,7 +280,7 @@ main(){
 			    FILE=$(fselect "Please select a OpenWrt rootfs-ext4 image file:" 1 10 110)
 			    CONFILE=$(fselect "Please select a OpenWrt configuration backup file:" 1 10 110)
 		            OPENWRT_PARTUUID=$(/sbin/blkid $OPENWRT_ROOT_PATH|sed 's/^.*PARTUUID=//g')
-			    cp -rf ./openwrt-x86-64-vmlinuz /boot
+			    cp -rf ./openwrt-x86-64-generic-kernel.bin /boot
 			    gzip -dc $FILE | dd of=$OPENWRT_ROOT_PATH
 			    yes|e2fsck -f $OPENWRT_ROOT_PATH
 			    resize2fs $OPENWRT_ROOT_PATH $ROOT_NEW_SIZE

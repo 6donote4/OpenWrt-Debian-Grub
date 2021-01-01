@@ -4,9 +4,9 @@ exec tail -n +3 $0
 # menu entries you want to add after this comment.  Be careful not to change
 # the 'exec tail' line above.
 menuentry "OpenWrt" {
-	linux /openwrt-x86-64-vmlinuz root=PARTUUID=OPENWRT_ID rootfstype=ext4 rootwait console=tty0 console=ttyS0,115200n8 noinitrd
+	linux /openwrt-x86-64-generic-kernel.bin root=PARTUUID=OPENWRT_ID rootfstype=ext4 rootwait console=tty0 console=ttyS0,115200n8 noinitrd
 }
 menuentry "OpenWrt (failsafe)" {
-	linux /openwrt-x86-64-vmlinuz failsafe=true root=PARTUUID=OPENWRT_ID rootfstype=ext4 rootwait console=tty0 console=ttyS0,115200n8 noinitrd
+	linux /openwrt-x86-64-generic-kernel.bin failsafe=true root=PARTUUID=OPENWRT_ID rootfstype=ext4 rootwait console=tty0 console=ttyS0,115200n8 noinitrd
 }
 
