@@ -284,6 +284,8 @@ main(){
 			    gzip -dc $FILE | dd of=$OPENWRT_ROOT_PATH
 			    yes|e2fsck -f $OPENWRT_ROOT_PATH
 			    resize2fs $OPENWRT_ROOT_PATH $ROOT_NEW_SIZE
+			    yes|e2fsck -f $OPENWRT_ROOT_PATH
+			    resize2fs -f $OPENWRT_ROOT_PATH``
 			    mkdir ./my_openwrt
 			    mount $OPENWRT_ROOT_PATH ./my_openwrt
 			    tar xvf $CONFILE -C ./my_openwrt

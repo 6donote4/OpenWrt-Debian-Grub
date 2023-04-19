@@ -71,12 +71,13 @@ write_image() {
     gzip -dc openwrt-x86-64-generic-ext4-rootfs* | dd of=$OPENWRT_ROOT_PATH
     e2fsck -f $OPENWRT_ROOT_PATH
     resize2fs $OPENWRT_ROOT_PATH $ROOT_NEW_SIZE
-    mkdir ./my_openwrt
-    mount $OPENWRT_ROOT_PATH ./my_openwrt
     echo -e "${green}write_image done${plain}"
 }
 
 recovery_openwrt() {
+    mkdir ./my_openwrt
+    print_fun ${OPENWRT_ROOT_PATH=$(read_fun "Please input installed block device path of OpenWRT: ")}
+    mount $OPENWRT_ROOT_PATH ./my_openwrt
     tar xvf ./backup-OpenWrt*.tar.gz -C ./my_openwrt
     umount ./my_openwrt
     rm -rf my_openwrt
@@ -110,8 +111,10 @@ default_boot() {
 resize_root() {
     print_fun ${OPENWRT_ROOT_PATH=$(read_fun "Please input installed block device path of OpenWRT: ")}
     print_fun ${ROOT_NEW_SIZE=$(read_fun "Please input new size(M) of OpenWRT root partition file system(Not out of range in device!): ")}
-    e2fsck -f $OPENWRT_ROOT_PATH
+    yes|e2fsck -f $OPENWRT_ROOT_PATH
     resize2fs $OPENWRT_ROOT_PATH $ROOT_NEW_SIZE
+    yes|e2fsck -f $OPENWRT_ROOT_PATH
+    resize2fs -f $OPENWRT_ROOT_PATH
     echo -e "${green}resize_root done${plain}"
 }
 
@@ -149,8 +152,8 @@ ARGS=( "$@" )
             exit 0
             ;;
 	    -u)
-	    write_image
-	    recovery_openwrt
+            write_image
+            recovery_openwrt
 	    ;;
 	    -h|--help)
 			usage
